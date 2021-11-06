@@ -1,0 +1,322 @@
+/* ### GENERAL SITE STYLES ### */
+* {
+  font-family: 'Roboto Slab', serif;
+}
+body {
+  background-color: #053f5e;
+  color: #F5F5F5;
+}
+.login {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+input {
+  color: #f5f5f5;
+  width: 500px;
+  background-color: #115173;
+  border-width: 0px;
+  height: 100px;
+  font-size: 20px;
+}
+input:hover {
+  transition: .2s;
+  border-bottom-width: 5px;
+  border-bottom-color: rgb(255, 240, 201);
+}
+.enunciado {
+  margin: 10% 0px;
+  display: inline-block;
+}
+.datos {
+  margin: 50px 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+}
+.Interior {
+  display: flex;
+  justify-content: center;
+}
+.datos td {
+  padding: 0px 20px;
+}
+.datos td h1:hover {
+  transition: .2s;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: rgb(255, 240, 201);
+}
+.Encabezado {
+  width: 100%;
+}
+.Salir {
+  width: 25.6%;
+}
+.bttn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.butt1 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.butt2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Inicio {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.butt3 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.butt4 {
+  display: flex;
+  justify-content: center;
+}
+#site-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+#site-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; 
+}
+
+.show-nav #site-canvas {
+  height: 90vh;
+  -webkit-transform: translateX(100vw);
+  transform: translateX(100vw);
+  -webkit-transform: translate3d(100vw, 0, 0);
+  transform: translate3d(100vw, 0, 0);
+}
+
+/* ### MENU STYLES ### */
+
+#site-menu {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  background: #053f5e;
+  color: #f5f5f5;
+}
+
+.site-menu-content {
+  width: 100%;
+  max-width: 760px;
+  margin: 0px auto;
+  padding: 20px;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+#site-menu i {
+  color: #ffffff;
+  font-size: 2em;
+}
+
+#site-menu a {
+  text-decoration: none;
+  color: rgba(35, 31, 32, 0.25);
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+}
+
+#site-menu a:hover {
+  color: #f4f4f4;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* ### GENERAL CONTENT STYLES ### */
+h1 {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 2.25em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(86, 178, 171, 0.5);
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+}
+
+a:hover {
+  color: rgb(86, 178, 171);
+}
+
+.content {
+  width: 90%;
+  height: 100%;
+  max-width: 760px;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+i {
+  font-size: 2em;
+  color: #F5F5F5;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+}
+
+.nav-icon:hover {
+  color: rgb(86, 178, 171);
+}
+
+/* ### FOOTER ### */
+
+footer {
+   left: 0px;
+   bottom: 0px;
+   height: 30px;
+   width: 100%;
+   background: #053f5e;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+footer a {
+  color: rgba(245, 245, 245, 0.5);
+  font-size: 0.75em;
+}
+/* ### Gestionar Medico ### */
+.Crudre {
+  display: none;
+}
+.CrudCon {
+  display: none;
+}
+.CrudMo {
+  display: none;
+}
+.CrudAc {
+  display: none;
+}
+/* ## Registrar ##*/
+.btnCrudRe {
+  width: 200px;
+  cursor: pointer;
+}
+.jsCrudRe .Crudre{
+  display: block;
+}
+.jsCrudRe .btnCrudCon{
+  display: none;
+}
+.jsCrudRe .btnCrudMo{
+  display: none;
+}
+.jsCrudRe .btnCrudAc{
+  display: none;
+}
+
+/* ## Consultar ## */
+
+.btnCrudCon {
+  width: 200px;
+  cursor: pointer;
+}
+.jsCrudCon .CrudCon{
+  display: block;
+}
+.jsCrudCon .btnCrudRe{
+  display: none;
+}
+.jsCrudCon .btnCrudMo{
+  display: none;
+}
+.jsCrudCon .btnCrudAc{
+  display: none;
+}
+
+/* ## Modificar ## */
+
+.btnCrudMo {
+  width: 200px;
+  cursor: pointer;
+}
+.jsCrudMo .CrudMo{
+  display: block;
+}
+.jsCrudMo .btnCrudRe{
+  display: none;
+}
+.jsCrudMo .btnCrudCon{
+  display: none;
+}
+.jsCrudMo .btnCrudAc{
+  display: none;
+}
+
+/* ## Activar ## */
+
+.btnCrudAc {
+  width: 350px;
+  cursor: pointer;
+}
+.jsCrudAc .CrudAc{
+  display: block;
+}
+.jsCrudAc .btnCrudRe{
+  display: none;
+}
+.jsCrudAc .btnCrudMo{
+  display: none;
+}
+.jsCrudAc .btnCrudCon{
+  display: none;
+}
+
+/* ## ##*/
+
+.CrudMed {
+  width: 100%;
+} 
+.CrudForm tr td{
+  padding: 5px;
+}
+.CrudMedSe {
+  width: 100%;
+  color: #f5f5f5;
+  background-color: #115173;
+  border-width: 0px;
+  height: 100px;
+  font-size: 20px;
+}
